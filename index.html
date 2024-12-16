@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <section>
+      <div id="leftSide">
+        <div id="odin">
+          <div id="logoContainer">
+            <img src="images/odin-lined-logo.png" alt="" />
+          </div>
+          <div id="logoText">ODIN</div>
+        </div>
+        <footer>credit to Annie Spratt from unsplash</footer>
+      </div>
+      <div id="rightSide">
+        <div>
+          <h1>Let's do this!</h1>
+
+          <form action="#" method="post">
+            <fieldset>
+              <div>
+                <label for="firstName">First Name</label>
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  placeholder="James"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lastName">Last Name</label>
+                <input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  placeholder="Onzima"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="jamesonzima@gmail.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phoneNumber">Phone number</label>
+                <input
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  type="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div>
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  name="password"
+                  class="passwords"
+                  type="password"
+                  minlength="8"
+                  maxlength="16"
+                  required
+                />
+              </div>
+              <div>
+                <label for="passwordConfirmation">Confirm Password</label>
+                <input
+                  id="passwordConfirmation"
+                  class="passwords"
+                  type="password"
+                  minlength="8"
+                  maxlength="16"
+                  required
+                />
+              </div>
+            </fieldset>
+            <button type="button">Create Account</button>
+            <p>Already have an account? <span>Log in</span></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

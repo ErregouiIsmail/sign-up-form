@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "logoFont";
+  src: url("/fonts/Norse-Bold.otf") format("opentype");
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+#leftSide {
+  flex: 1;
+
+  background-image: url(images/annie-spratt-hXJXtAN9x0Q-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#odin {
+  width: 100%;
+
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logoContainer {
+  height: 100px;
+}
+
+#logoText {
+  font-family: "logoFont";
+  font-size: 100px;
+  color: white;
+}
+
+#rightSide {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  display: flex;
+  border: 0;
+}
+
+label {
+  display: block;
+}
+
+input {
+  border-color: #e5e7eb;
+}
+
+fieldset > div {
+  margin: 10px 20px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+
+  border: 0;
+  margin: 10px;
+
+  background-color: #596d48;
+
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+span {
+  color: #596d48;
+  font-size: large;
+  font-weight: bold;
+}
+
+.passwords:invalid {
+  border-color: red;
+}
+
+.passwords:valid {
+  border-color: green;
+}
+input:focus {
+  border-color: rgb(0, 17, 255);
+}
